@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My small description of contact page">
-    <meta name="keywords" content="Kingdom of Colchis, contact, royale, another contact keyword">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My small description of contact page" />
+    <meta
+      name="keywords"
+      content="Kingdom of Colchis, contact, royale, another contact keyword"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Contact - The Royale Kingdom of Colchis</title>
-</head>
-<body>
-    <p>Contact</p>
-</body>
+  </head>
+  <body>
+    <header class="shadow-header">
+      <div>
+        <img src="img/logo.png" alt="le blason" />
+      </div>
+      <nav class="nav-header">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="royal-family.html">Royal family</a></li>
+          <li><a href="assets.html">Royal assets</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1 class="ttl-primary">Contact</h1>
+        <form action="#" class="contact-form">
+          <div class="mb-2">
+            <label class="d-block" for="name">Nom</label>
+            <input type="text" id="name" name="name" value="" />
+          </div>
+          <div class="mb-2">
+            <label class="d-block" for="email">Email</label>
+            <input type="email" id="email" name="email" value="" />
+          </div>
+          <div>
+            <label class="d-block" for="msg">Message</label>
+            <textarea name="msg" id="msg"></textarea>
+          </div>
+          <div class="text-right">
+            <input type="submit" value="Submit" />
+          </div>
+        </form> 
+      </article>
+    </main>
+  </body>
 </html>

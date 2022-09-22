@@ -11,8 +11,8 @@ a {
     text-decoration: none;
 }
 
-a:active, a:visited{
-    color: black;
+a, a:active, a:visited{
+    color: inherit
 }
 
 p, body, ul, li, figure {
@@ -37,8 +37,20 @@ ul {
 
 
 /* generic class */
+.mb-2 {
+    margin-bottom: 1rem;
+}
+.mt-2 {
+    margin-top: 1rem;
+}
+.txt-right {
+    text-align: right;
+}
 .txt-center {
     text-align: center;
+}
+.d-block {
+    display: "block";
 }
 .d-flex {
     display: flex;
@@ -64,7 +76,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-
 }
 
 .nav-header li {
@@ -75,9 +86,10 @@ header {
 
 .nav-header li a {
     padding: 16px;
+    transition: background-color 1s ease;
 }
 
-.nav-header li a:hover {
+.nav-header li a:hover,  .nav-header li a.active{
     background-color: grey;
     color: white;
 }
@@ -102,6 +114,7 @@ header {
 
 article {
     margin-bottom: 24px;
+    padding: 0 16px;
 }
 
 article .item {
@@ -110,4 +123,25 @@ article .item {
 
 article .item img {
     width: 100%;
+}
+
+.contact-form label {
+    display: block;
+}
+
+table {
+    width: 100%;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+table th {
+   background-color: grey
+}
+
+table td {
+    border: 1px solid grey;
 }
