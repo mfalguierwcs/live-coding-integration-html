@@ -1,0 +1,113 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'robotoRegular, arial';
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active, a:visited{
+    color: black;
+}
+
+p, body, ul, li, figure {
+    margin: 0;
+    padding: 0
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* font face */
+@font-face {
+  font-family: 'robotRegular';
+  src: url('../fonts/Roboto-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'robotoBold';
+  src: url('../fonts/Roboto-Bold.ttf') format('ttf');
+}
+
+
+
+/* generic class */
+.txt-center {
+    text-align: center;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.shadow-header {
+  box-shadow: 5px 2px 8px grey;
+}
+
+.font-bold {
+  font-family: 'robotoBold, arial';
+}
+
+.ttl-primary {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+
+/* others styles ... */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.nav-header li {
+    display: inline-block;
+    margin-right: 16px;
+
+}
+
+.nav-header li a {
+    padding: 16px;
+}
+
+.nav-header li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.hero-home {
+    background: url(../img/home-hero.jpeg);
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-home figcaption {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    font-size: 32px;
+
+}
+
+article {
+    margin-bottom: 24px;
+}
+
+article .item {
+    width: 30%;
+}
+
+article .item img {
+    width: 100%;
+}
